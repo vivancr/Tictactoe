@@ -31,20 +31,6 @@ public class Tictactoe {
             the plays of each player*/
     
     /**
-     * Prints board 
-     * 
-     */
-    public static void printboard(){
-        String row1 = " " + plays.indexOf(0)+ "  |   |   "; /*this causes an issue but
-                I have to go to class, I'll fix this later*/
-        String row2 = "   |   |   ";
-        String row3 = "   |   |   ";
-        String rowm = "---+---+---";
-                
-        String board = row1 +"\n"+ rowm +"\n"+ row2 +"\n"+ rowm +"\n"+ row3;
-        System.out.println(board);
-    }
-    /**
      * @return random number, either 0 or 1
     */
     public static int randstart(){
@@ -82,7 +68,7 @@ public class Tictactoe {
         System.out.println(randstart());
         pXturn();
         System.out.println(randplay());
-        printboard();
+        //printboard();
     }
     
 }
