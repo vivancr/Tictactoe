@@ -7,6 +7,14 @@ package tictactoe;
 
 /**
  * This is a second update test
+ * TODO: 
+ * printBoard() no return, no parameters, prints board
+ * validMove(int x, int y)  parameters: cords to check, returns true if valid, false if not
+ * winnerCheck() no parameters, no return, prints winner and quits program
+ * inputStringToCords(String input) parameters: string from user input, output: list of 2 numbers that represent
+ *      cords [x,y]
+ * 
+ * meet 1:00pm sat
  */
 
 /**
