@@ -21,21 +21,30 @@ package tictactoe;
  *
  * @author ricardovivanco
  */
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner; 
 
 public class Tictactoe {
-
-    ArrayList<String> board = new ArrayList<>(3);
+    
+    public static List<String> plays = Arrays.asList(new String[9]);  /*global ArrayList that contains
+            the plays of each player*/
+    
     /**
      * Prints board 
-     * @return board
+     * 
      */
-    /**
-    public static String printboard(){
-        board.set(0,"space 0");
-        return "hey";
+    public static void printboard(){
+        String row1 = " " + plays.indexOf(0)+ "  |   |   "; /*this causes an issue but
+                I have to go to class, I'll fix this later*/
+        String row2 = "   |   |   ";
+        String row3 = "   |   |   ";
+        String rowm = "---+---+---";
+                
+        String board = row1 +"\n"+ rowm +"\n"+ row2 +"\n"+ rowm +"\n"+ row3;
+        System.out.println(board);
     }
+    /**
      * @return random number, either 0 or 1
     */
     public static int randstart(){
@@ -73,6 +82,7 @@ public class Tictactoe {
         System.out.println(randstart());
         pXturn();
         System.out.println(randplay());
+        printboard();
     }
     
 }
