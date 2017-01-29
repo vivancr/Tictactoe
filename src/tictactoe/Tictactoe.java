@@ -68,7 +68,8 @@ public class Tictactoe {
         System.out.println(randstart());
         pXturn();
         System.out.println(randplay());
-        //printboard();
+        TicTacToeBoard board = new TicTacToeBoard();/*these two lines should work but they're*/
+        board.printBoard();                         /*not for some reason*/
     }
     
 }
