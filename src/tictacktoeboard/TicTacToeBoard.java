@@ -130,7 +130,9 @@ public class TicTacToeBoard {
      * @param cords int array of size 2
      */
     public void printCords(int[] cords) {
-        System.out.print(cords[0] +","+ cords[1]);
+        int x = cords[0] + 1;
+        int y = cords[1] +1;
+        System.out.print(x + "," + y);
     }
 }
 
