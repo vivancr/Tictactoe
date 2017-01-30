@@ -133,7 +133,7 @@ public class TicTacToeGame {
         TicTacToeBoard board = new TicTacToeBoard();
         System.out.println("Player X, enter a pair of numbers");
         System.out.println("between 1 and 3 in the form of row,col");
-        System.out.println("example: row 1 column 3 would be:  3,2");
+        System.out.println("example: row 1 column 3 would be:  1,3");
         System.out.println("You are player 'O' and the computer is player 'X'");
 
         TicTacToeGame game = new TicTacToeGame();
